@@ -1,0 +1,56 @@
+c:\users\desarrollo\documents\visual studio 2013\Projects\Carsolio\Carsolio\bin\Carsolio.dll.config
+c:\users\desarrollo\documents\visual studio 2013\Projects\Carsolio\Carsolio\bin\Carsolio.dll
+c:\users\desarrollo\documents\visual studio 2013\Projects\Carsolio\Carsolio\bin\Carsolio.pdb
+c:\users\desarrollo\documents\visual studio 2013\Projects\Carsolio\Carsolio\obj\Debug\Carsolio.csprojResolveAssemblyReference.cache
+c:\users\desarrollo\documents\visual studio 2013\Projects\Carsolio\Carsolio\obj\Debug\Carsolio.dll
+c:\users\desarrollo\documents\visual studio 2013\Projects\Carsolio\Carsolio\obj\Debug\Carsolio.pdb
+F:\Carsolio\Carsolio\bin\Carsolio.dll.config
+F:\Carsolio\Carsolio\bin\Carsolio.dll
+F:\Carsolio\Carsolio\bin\Carsolio.pdb
+F:\Carsolio\Carsolio\obj\Debug\Carsolio.csprojResolveAssemblyReference.cache
+F:\Carsolio\Carsolio\obj\Debug\Carsolio.dll
+F:\Carsolio\Carsolio\obj\Debug\Carsolio.pdb
+I:\Carsolio\Carsolio\bin\Carsolio.dll.config
+I:\Carsolio\Carsolio\bin\Carsolio.dll
+I:\Carsolio\Carsolio\bin\Carsolio.pdb
+I:\Carsolio\Carsolio\obj\Debug\Carsolio.dll
+I:\Carsolio\Carsolio\obj\Debug\Carsolio.pdb
+I:\Carsolio\Carsolio\obj\Debug\Carsolio.csprojResolveAssemblyReference.cache
+H:\Carsolio\Carsolio\bin\Carsolio.dll.config
+H:\Carsolio\Carsolio\bin\Carsolio.dll
+H:\Carsolio\Carsolio\bin\Carsolio.pdb
+H:\Carsolio\Carsolio\obj\Debug\Carsolio.csprojResolveAssemblyReference.cache
+H:\Carsolio\Carsolio\obj\Debug\Carsolio.dll
+H:\Carsolio\Carsolio\obj\Debug\Carsolio.pdb
+H:\Carsolio\Carsolio\bin\itextsharp.dll
+H:\Carsolio\Carsolio\bin\itextsharp.pdfa.dll
+H:\Carsolio\Carsolio\bin\itextsharp.xtra.dll
+H:\Carsolio\Carsolio\bin\OnBarcode.Barcode.WinForms.dll
+H:\Carsolio\Carsolio\obj\Debug\Carsolio.csproj.ResolveComReference.cache
+E:\Carsolio\Carsolio\bin\Carsolio.dll.config
+E:\Carsolio\Carsolio\bin\Carsolio.dll
+E:\Carsolio\Carsolio\bin\Carsolio.pdb
+E:\Carsolio\Carsolio\bin\itextsharp.dll
+E:\Carsolio\Carsolio\bin\itextsharp.pdfa.dll
+E:\Carsolio\Carsolio\bin\itextsharp.xtra.dll
+E:\Carsolio\Carsolio\bin\OnBarcode.Barcode.WinForms.dll
+E:\Carsolio\Carsolio\obj\Debug\Carsolio.csprojResolveAssemblyReference.cache
+E:\Carsolio\Carsolio\obj\Debug\Carsolio.csproj.ResolveComReference.cache
+E:\Carsolio\Carsolio\obj\Debug\Carsolio.dll
+E:\Carsolio\Carsolio\obj\Debug\Carsolio.pdb
+F:\Carsolio\Carsolio\bin\itextsharp.dll
+F:\Carsolio\Carsolio\bin\itextsharp.pdfa.dll
+F:\Carsolio\Carsolio\bin\itextsharp.xtra.dll
+F:\Carsolio\Carsolio\bin\OnBarcode.Barcode.WinForms.dll
+F:\Carsolio\Carsolio\obj\Debug\Carsolio.csproj.ResolveComReference.cache
+C:\Users\usuario\Desktop\Carsolio\Carsolio\bin\Carsolio.dll.config
+C:\Users\usuario\Desktop\Carsolio\Carsolio\bin\Carsolio.dll
+C:\Users\usuario\Desktop\Carsolio\Carsolio\bin\Carsolio.pdb
+C:\Users\usuario\Desktop\Carsolio\Carsolio\bin\itextsharp.dll
+C:\Users\usuario\Desktop\Carsolio\Carsolio\bin\itextsharp.pdfa.dll
+C:\Users\usuario\Desktop\Carsolio\Carsolio\bin\itextsharp.xtra.dll
+C:\Users\usuario\Desktop\Carsolio\Carsolio\bin\OnBarcode.Barcode.WinForms.dll
+C:\Users\usuario\Desktop\Carsolio\Carsolio\obj\Debug\Carsolio.csproj.ResolveComReference.cache
+C:\Users\usuario\Desktop\Carsolio\Carsolio\obj\Debug\Carsolio.dll
+C:\Users\usuario\Desktop\Carsolio\Carsolio\obj\Debug\Carsolio.pdb
+C:\Users\usuario\Desktop\Carsolio\Carsolio\obj\Debug\Carsolio.csprojResolveAssemblyReference.cache

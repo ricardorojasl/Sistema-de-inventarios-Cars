@@ -1,0 +1,432 @@
+﻿body {
+    background:url("../images/fondo.gif");
+    margin:0px;
+    width: static;
+}
+
+.cabeza{
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    text-align: center;
+}
+.cabeza h2{
+    width:100%;
+    font-family:'Arial Unicode MS';
+    font:bold;
+    color: #1c4e05;
+}
+.login img{
+    width:100%;
+}
+.login .logo{
+    width:398.75px;
+    height:410px;
+    float: left;
+}
+.login .formulario{
+    width:65%;
+    height:410px;
+    font-size: 30px;
+    font-family:'Arial Unicode MS';
+    font:bold;
+    color: #1c4e05;
+}
+.login{
+   width:100%;
+   margin-top:6%;
+   margin-left:20%;
+   margin-right:80%;    
+}
+.login .formulario input{
+    width: 400px;
+   display:inline;
+}
+.leyenda{
+    width:398.75px; 
+    text-align:justify;
+    color: #1c4e05;
+    font-size: 18px;
+}
+
+/*/////////////////*/			
+
+.header{
+padding:30px 0;
+width:100%;
+height:158px;
+margin-left:8%;
+}
+.header-left a {
+  display: block;
+}
+.header-right ul li a:hover,.header-right ul li a.active {
+  background-color:rgba(8, 23, 141, 0.49);
+     color:#ff6a00;
+}
+.header-left{
+float:left;
+padding-left:60px;
+width:10%;
+}
+.header-left img{
+width:80%;
+}
+.header-right{
+float:right;
+width:80%;
+margin-right: 120px;
+padding-top: 50px;
+}
+.header-right ul{
+	padding:0;
+	margin:0;
+	text-align:center;
+	}
+.header-right ul li{
+	display:block;
+     text-align:justify;
+	}
+.header-right ul li a {
+	font-family:'Arial Rounded MT';
+    font:bold;
+    font-size:large;
+	font-weight:400;
+	margin:0 16px;
+	text-decoration: none;
+	}
+	.nav1 > li {
+	float:left;
+}
+			
+.nav1 li a {
+	font-family:'Arial Rounded MT';
+font:bold;
+font-size:large;
+	padding:10px 12px;
+	display:block;
+}
+			
+.nav1 li a:hover {
+	background-color:#434343;
+}
+			
+.nav1 li ul {
+	display:none;
+	position:absolute;
+	
+}
+			
+.nav1 li:hover > ul {
+display:block;
+}
+			
+.nav1 li ul li {
+position:relative;
+
+}
+.nav1  li ul li a{
+font-family:'Arial Rounded MT';
+font:bold;
+font-size:large;
+font-weight:400;
+margin:0 16px;
+text-decoration: none;
+
+}			
+.nav1 li ul li ul {
+right:-140px;
+top:0px;
+}
+#contenedorProd {
+border:ridge;
+width:30%;
+margin-left:auto;
+margin-right:auto;
+height:690px;
+margin-top:25px;
+background-color:rgba(233, 162, 85, 0.35);
+border-color: rgba(0, 114, 255, 0.63);
+-webkit-border-radius: 5px 10px;  
+  -moz-border-radius: 5px 10px;
+}
+
+#contenedorProd input[type='text'], #contenedorProd textarea, #contenedorProd select{
+width:60%;
+display: inline;
+}
+#contenedorProd span{
+     color:#0f654b;
+    font-family:'Arial Rounded MT';
+    font:bold;
+    font-size:x-large;
+font-weight:400;
+}
+
+#contenedorTran {
+border:ridge;
+width:30%;
+margin-left:auto;
+margin-right:auto;
+height:670px;
+margin-top:25px;
+background-color:rgba(233, 162, 85, 0.35);
+border-color: rgba(0, 114, 255, 0.63);
+-webkit-border-radius: 5px 10px;  
+  -moz-border-radius: 5px 10px;
+}
+
+#contenedorTran input[type='text'], #contenedorTran textarea, #contenedorTran select{
+width:60%;
+display: inline;
+}
+#contenedorTran span{
+     color:#0f654b;
+    font-family:'Arial Rounded MT';
+    font:bold;
+    font-size:x-large;
+font-weight:400;
+}
+
+.Agregar{
+     width: 90%;
+     margin-left:10%;
+     margin-right:auto;
+    
+}
+.trasaccion{
+     width: 75%;
+     margin-left:10%;
+     margin-right:auto;
+     margin-top:50px;
+}
+
+.transaccion, #ListBox1 {
+margin-left:30%;
+height:200px;
+
+}
+
+.transaccion, #UpdatePanel1, #Label6,#txtFecha,#Label11,#txtCod,#ListBox1 {
+    margin-top:10%;
+
+}
+.transaccion,#Button2 {
+margin-left:40%;
+
+}
+
+#ListBox1 {
+margin-left:39%;
+}
+
+
+.AgregarMod{
+     width: 75%;
+     margin-left:10%;
+     margin-right:auto;
+     margin-top:50px;
+}
+#contenedorMod{
+border:ridge;
+width:30%;
+margin-left:auto;
+margin-right:auto;
+height:300px;
+margin-top:25px;
+background-color:rgba(233, 162, 85, 0.35);
+border-color: rgba(0, 114, 255, 0.63);
+-webkit-border-radius: 5px 10px;  
+ -moz-border-radius: 5px 10px;
+}
+
+#contenedorMod input[type='text']{
+width:60%;
+display: inline;
+margin-left:22%;
+margin-right:auto;
+}
+#contenedorMod span{
+    color:#0f654b;
+    font-family:'Arial Rounded MT';
+    font:bold;
+    font-size:x-large;
+    font-weight:400;
+    margin-left:25%;
+    margin-right:auto;
+}
+
+/*///// RISHY//////*/
+#contenedor {
+    border-radius: 5px 10px;
+    border-style:ridge;
+   border-color: rgba(0, 114, 255, 0.63);
+width:25%;
+margin-left:auto;
+margin-right:auto;
+height:350px;
+margin-top:25px;
+background-color:rgba(233, 162, 85, 0.35);
+}
+
+.Codigo {
+ margin-left:17%;
+    margin-top:5%;
+}
+    #label_codigo , #label_nombre, #label_cantidad, #label_descripcion, #label_modulo{
+       color:#0f654b;
+    font-family:'Arial Rounded MT';
+    font:bold;
+    font-size:x-large;
+font-weight:400;
+    }
+
+.Nombre, .Modulo, .Cantidad {
+     margin-left:17%;
+    margin-top:5%;
+}
+#contenedor input[type="text"] {
+display:inline-block;
+width:50%;
+} 
+
+     #label_producto , #label_nmodulo, #label_ncantidad{
+        border-radius:5px 10px;
+        border-style:ridge;
+        font-family:'Arial Rounded MT';
+        font-size:medium;
+    }
+.Descripcion_Titulo{
+    margin-left:30%;
+    margin-top:5%;
+}
+#label_descripcion {
+padding-top:50%;
+}
+
+#area_descripcion {
+   width:80%;
+   margin-left:12%;
+   height:200px;
+   border-radius:5px 10px;
+}
+
+/*////////////CSS PARA CONSULTA POR NOMBRE///////////*/
+#PanelCN {
+    border-radius: 5px 10px;
+    border-style:ridge;
+   border-color: rgba(0, 114, 255, 0.63);
+width:25%;
+margin-left:auto;
+margin-right:auto;
+height:300px;
+margin-top:25px;
+background-color:rgba(233, 162, 85, 0.35);
+}
+#PanelCN input[type="text"] {
+display:inline-block;
+width:50%;
+}
+.CNNombre , .CNCantidad, .CNombre, .CNModulo{
+
+     margin-left:17%;
+    margin-top:5%;
+}
+#label_nombreproducto, #label_cnnombre {
+    color:#0f654b;
+    font-family:'Arial Rounded MT';
+    font:bold;
+    font-size:x-large;
+font-weight:400;
+
+}
+
+/*//////CSS PARA CONSULTA POR NOMBRE Y MARCA//////////////*/
+
+#PanelCNM {
+    border-radius: 5px 10px;
+    border-style:ridge;
+   border-color: rgba(0, 114, 255, 0.63);
+width:25%;
+margin-left:auto;
+margin-right:auto;
+height:325px;
+margin-top:25px;
+background-color:rgba(233, 162, 85, 0.35);
+}
+#PanelCNM input[type="text"] {
+display:inline-block;
+width:50%;
+}
+.CNMNombre, .CNMarca, .CNMnombre, .CNModulo, .CNMCantidad {
+     margin-left:17%;
+    margin-top:5%;
+}
+   #label_cnmnombre, #label_cnmmarca, #label_cnmnombreproducto, #label_cnmmodulo, #label_cnmcantidad{
+       color:#0f654b;
+    font-family:'Arial Rounded MT';
+    font:bold;
+    font-size:x-large;
+font-weight:400;
+    }
+   #label_cnmproducto, #label_modulocnm, #label_cantidadcnm{
+    border-radius:5px 10px;
+        border-style:ridge;
+        font-family:'Arial Rounded MT';
+        font-size:medium;
+
+}
+   /*///////CSS PARA AGREGAR USUARIO///////*/
+#Panelagregar_usuario{
+border:ridge;
+width:30%;
+margin-left:auto;
+margin-right:auto;
+height:300px;
+margin-top:25px;
+background-color:rgba(233, 162, 85, 0.35);
+border-color: rgba(0, 114, 255, 0.63);
+-webkit-border-radius: 5px 10px;  
+-moz-border-radius: 5px 10px;
+}
+
+#Panelagregar_usuario input[type='text']{
+width:60%;
+display: inline;
+margin-left:22%;
+margin-right:auto;
+}
+
+#Panelagregar_usuario span{
+    color:#0f654b;
+    font-family:'Arial Rounded MT';
+    font:bold;
+    font-size:x-large;
+    font-weight:400;
+    margin-left:25%;
+    margin-right:auto;
+}
+
+table#Tabla1, table#Tabla2{
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+}
+#PanelReportes {
+  border-radius: 5px 10px;
+  border-style: ridge;
+  border-color: rgba(0, 114, 255, 0.63);
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  margin-top: 25px;
+  background-color: rgba(233, 162, 85, 0.35);
+}
+
+#PanelReportes select {
+  width: 58%;
+  display: inline;
+  margin-top:10%;
+  margin-left:25%;
+}
