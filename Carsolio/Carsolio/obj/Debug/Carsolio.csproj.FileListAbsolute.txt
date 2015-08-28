@@ -54,3 +54,14 @@ C:\Users\usuario\Desktop\Carsolio\Carsolio\obj\Debug\Carsolio.csproj.ResolveComR
 C:\Users\usuario\Desktop\Carsolio\Carsolio\obj\Debug\Carsolio.dll
 C:\Users\usuario\Desktop\Carsolio\Carsolio\obj\Debug\Carsolio.pdb
 C:\Users\usuario\Desktop\Carsolio\Carsolio\obj\Debug\Carsolio.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\bin\Carsolio.dll.config
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\bin\Carsolio.dll
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\bin\Carsolio.pdb
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\bin\itextsharp.dll
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\bin\itextsharp.pdfa.dll
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\bin\itextsharp.xtra.dll
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\bin\OnBarcode.Barcode.WinForms.dll
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\obj\Debug\Carsolio.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\obj\Debug\Carsolio.csproj.ResolveComReference.cache
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\obj\Debug\Carsolio.dll
+C:\Users\usuario\Documents\GitHub\Sistema-de-inventarios-Cars\Carsolio\Carsolio\obj\Debug\Carsolio.pdb

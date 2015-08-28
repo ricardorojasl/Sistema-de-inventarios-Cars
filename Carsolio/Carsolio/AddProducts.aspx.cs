@@ -70,7 +70,7 @@ namespace Carsolio
         {
             Random r = new Random();
             long idr;
-            long ran = r.Next(0, 9);
+            long ran = r.Next(1111, 9999);
 
 
             string num = ran.ToString();
