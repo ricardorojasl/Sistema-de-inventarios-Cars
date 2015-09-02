@@ -10,6 +10,7 @@ using iTextSharp.text.html.simpleparser;
  
 using System.Data;
 using System.IO;
+using System.Data.SqlClient;
 namespace Carsolio
 {
     public partial class Reportes : System.Web.UI.Page
@@ -116,13 +117,13 @@ namespace Carsolio
             /*HACER LA CONSULTA DIRECTAMENTE DESDE ESTE MEDIO PARA EVITAR PROBLEMAS CON FILAS/COLUMNAS */
             ///////////////////////////////////////////////////////////////////////////////////////////
 
-            MySqlConnection con = new MySqlConnection();
-            MySqlCommand cmd;
+            SqlConnection con = new SqlConnection();
+            SqlCommand cmd;
             con.ConnectionString = "server=localhost; database=carsolio; Uid=root; pwd=;";
             con.Open();
             DataTable datos = new DataTable();
-            cmd = new MySqlCommand("select IdProduct as ID, NameProd as Producto, NameModule as Modulo, Quantity as Cantidad, Date as fecha, Description as Descripcion from stock", con);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            cmd = new SqlCommand("select IdProduct as ID, NameProd as Producto, NameModule as Modulo, Quantity as Cantidad, Date as fecha, Description as Descripcion from stock", con);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             adapter.Fill(datos);
             con.Close();
 
@@ -182,13 +183,13 @@ namespace Carsolio
             /*HACER LA CONSULTA DIRECTAMENTE DESDE ESTE MEDIO PARA EVITAR PROBLEMAS CON FILAS/COLUMNAS */
             ///////////////////////////////////////////////////////////////////////////////////////////
 
-            MySqlConnection con = new MySqlConnection();
-            MySqlCommand cmd;
+            SqlConnection con = new SqlConnection();
+            SqlCommand cmd;
             con.ConnectionString = "server=localhost; database=carsolio; Uid=root; pwd=;";
             con.Open();
             DataTable datos = new DataTable();
-            cmd = new MySqlCommand("select idProd as Codigo, Producto, Cantidad, Fecha  from transacciones where Persona= '"+personal+"'", con);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            cmd = new SqlCommand("select idProd as Codigo, Producto, Cantidad, Fecha  from transacciones where Persona= '"+personal+"'", con);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             adapter.Fill(datos);
             con.Close();
 
