@@ -11,16 +11,18 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
+
 namespace Carsolio
 {
      public class Conexion
      {
+        
          static string strcon = "Server=localhost;Database=carsolio;Uid=root;Pwd=;";
-         MySqlConnection con= new MySqlConnection(strcon);
-         MySqlCommand cmd;
-         MySqlDataReader dr;
-         MySqlDataAdapter da;
+          SqlConnection con= new  SqlConnection(strcon);
+          SqlCommand cmd;
+          SqlDataReader dr;
+          SqlDataAdapter da;
          
          string str;
          object obj;
@@ -30,7 +32,7 @@ namespace Carsolio
               bool resp; 
               con.Open();
               str = "select count(*) from user where User=@UserName and Password =@Password";
-              cmd = new MySqlCommand(str, con);
+              cmd = new  SqlCommand(str, con);
               cmd.CommandType = CommandType.Text;
               cmd.Parameters.AddWithValue("@UserName", user);
               cmd.Parameters.AddWithValue("@Password", contra);
@@ -50,7 +52,7 @@ namespace Carsolio
          public bool AddStock(long code, string nombre, string modulo, int cantidad, string descripcion,string date)
          {
              bool resp = false;
-             using(cmd = new MySqlCommand("insert into Stock (idProduct,NameProd,NameModule,Quantity,Description,date) values(@id,@nombre,@modulo,@cantidad,@desc,@date)",con)){
+             using(cmd = new  SqlCommand("insert into Stock (idProduct,NameProd,NameModule,Quantity,Description,date) values(@id,@nombre,@modulo,@cantidad,@desc,@date)",con)){
                  cmd.Parameters.AddWithValue("@id", code);
                  cmd.Parameters.AddWithValue("@nombre", nombre);
                  cmd.Parameters.AddWithValue("@modulo", modulo);
@@ -70,7 +72,7 @@ namespace Carsolio
          public bool AddMod(string modulo)
          {
              bool resp = false;
-             using (cmd = new MySqlCommand("insert into modules (modules) values(@module)", con))
+             using (cmd = new  SqlCommand("insert into modules (modules) values(@module)", con))
              {
                  cmd.Parameters.AddWithValue("@module", modulo);
                  cmd.Connection = con;
@@ -87,7 +89,7 @@ namespace Carsolio
              bool resp;
              con.Open();
              str = "select count(*) from stock where idProduct=@id";
-             cmd = new MySqlCommand(str, con);
+             cmd = new  SqlCommand(str, con);
              cmd.CommandType = CommandType.Text;
              cmd.Parameters.AddWithValue("@id", code);
              obj = cmd.ExecuteScalar();
@@ -109,8 +111,8 @@ namespace Carsolio
              int contador = 0;
              con.Open();
             
-                 cmd = new MySqlCommand("select "+tabla+" from "+tabla+"", con);
-                 MySqlDataReader leer = cmd.ExecuteReader();
+                 cmd = new  SqlCommand("select "+tabla+" from "+tabla+"", con);
+                  SqlDataReader leer = cmd.ExecuteReader();
                  while (leer.Read())
                  {
                      modulos.Insert(contador, leer.GetString(0));
@@ -123,7 +125,7 @@ namespace Carsolio
          public bool AddPersona(string persona)
          {
              bool resp = false;
-             using (cmd = new MySqlCommand("insert into personal (personal) values(@nombre)", con))
+             using (cmd = new  SqlCommand("insert into personal (personal) values(@nombre)", con))
              {
                  cmd.Parameters.AddWithValue("@nombre", persona);
                  cmd.Connection = con;
@@ -138,7 +140,7 @@ namespace Carsolio
          public bool AddTran(long code, string date, string persona,string producto, string cantidad)
          {
              bool resp = false;
-             using (cmd = new MySqlCommand("insert into transacciones (idProd,Producto,Cantidad,Fecha,Persona) values(@id,@producto,@cantidad,@fecha,@persona)", con))
+             using (cmd = new  SqlCommand("insert into transacciones (idProd,Producto,Cantidad,Fecha,Persona) values(@id,@producto,@cantidad,@fecha,@persona)", con))
              {
                  cmd.Parameters.AddWithValue("@id", code);
                  cmd.Parameters.AddWithValue("@fecha", date);
@@ -157,7 +159,7 @@ namespace Carsolio
 
          public void UpDateTran(long code, string cantidad)
          {
-             using (cmd = new MySqlCommand("update stock set Quantity = Quantity - @cantidad where  IdProduct = @id", con))
+             using (cmd = new  SqlCommand("update stock set Quantity = Quantity - @cantidad where  IdProduct = @id", con))
              {
                  cmd.Parameters.AddWithValue("@id", code);              
                  cmd.Parameters.AddWithValue("@cantidad", Convert.ToInt32(cantidad));
@@ -172,8 +174,8 @@ namespace Carsolio
          {
              con.Open();
              DataSet datos = new DataSet();
-             cmd = new MySqlCommand("select IdProduct as ID, NameProd as Producto, NameModule as Modulo, Quantity as Cantidad, Date as Fecha, Description as Descripcion from stock where IdProduct=" + "'" + codigo + "'", con);
-             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+             cmd = new  SqlCommand("select IdProduct as ID, NameProd as Producto, NameModule as Modulo, Quantity as Cantidad, Date as Fecha, Description as Descripcion from stock where IdProduct=" + "'" + codigo + "'", con);
+              SqlDataAdapter adapter = new  SqlDataAdapter(cmd);
              adapter.Fill(datos);
              tabla.DataSource = datos;
              tabla.DataBind();
@@ -186,8 +188,8 @@ namespace Carsolio
          {
              con.Open();
              DataSet datos = new DataSet();
-             cmd = new MySqlCommand("select sum(Quantity) as Cantidad, NameModule as Modulo from stock where NameProd like" + "'%" + producto + "%'", con);
-             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+             cmd = new  SqlCommand("select sum(Quantity) as Cantidad, NameModule as Modulo from stock where NameProd like" + "'%" + producto + "%'", con);
+              SqlDataAdapter adapter = new  SqlDataAdapter(cmd);
              adapter.Fill(datos);
              tabla.DataSource = datos;
              tabla.DataBind();
@@ -199,9 +201,9 @@ namespace Carsolio
 
              con.Open();
              DataSet datos = new DataSet();
-             cmd = new MySqlCommand("select * from stock", con);
+             cmd = new  SqlCommand("select * from stock", con);
              cmd.ExecuteNonQuery();
-             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+              SqlDataAdapter adapter = new  SqlDataAdapter(cmd);
 
              adapter.Fill(datos);
 
@@ -216,7 +218,7 @@ namespace Carsolio
          public int ConsultaExistencia(long codigo) {
              con.Open();
              int exis;
-             cmd = new MySqlCommand("select Quantity from Stock where IdProduct='" + codigo + "'", con);
+             cmd = new  SqlCommand("select Quantity from Stock where IdProduct='" + codigo + "'", con);
              exis = Convert.ToInt32(cmd.ExecuteScalar());
              con.Close();
              return exis;
@@ -230,7 +232,7 @@ namespace Carsolio
  
              con.Open();
 
-             cmd = new MySqlCommand("SELECT count(*) FROM information_schema.columns WHERE table_name = 'stock'", con);
+             cmd = new  SqlCommand("SELECT count(*) FROM information_schema.columns WHERE table_name = 'stock'", con);
              int cols = Convert.ToInt32(cmd.ExecuteScalar());
 
              con.Close();
@@ -242,7 +244,7 @@ namespace Carsolio
 
          public int Prueba1(long codigo) {
              con.Open();
-             cmd = new MySqlCommand("Select IdProduct from stock where IdProduct='" + codigo + "'", con);
+             cmd = new  SqlCommand("Select IdProduct from stock where IdProduct='" + codigo + "'", con);
              int result = Convert.ToInt32(cmd.ExecuteScalar());
              con.Close();
              return result;
@@ -251,7 +253,7 @@ namespace Carsolio
          {
 
              con.Open();
-             cmd = new MySqlCommand("Select NameProd from stock where IdProduct=" + "'" + codigo + "'", con);
+             cmd = new  SqlCommand("Select NameProd from stock where IdProduct=" + "'" + codigo + "'", con);
              string producto = Convert.ToString(cmd.ExecuteScalar());
 
              con.Close();
