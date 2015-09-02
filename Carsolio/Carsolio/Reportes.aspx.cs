@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using iTextSharp.text.html.simpleparser;
-using MySql.Data.MySqlClient;
+ 
 using System.Data;
 using System.IO;
 namespace Carsolio
