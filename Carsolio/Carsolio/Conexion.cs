@@ -18,7 +18,7 @@ namespace Carsolio
      public class Conexion
      {
          
-         static string strcon = "Data Source=.\\SQLEXPRESS;Initial Catalog=Customers;Integrated Security=True;";
+         static string strcon = "Data Source=localhost\\MSSQL10_50.SQLEXPRESS; Initial Catalog=carsolio";
           SqlConnection con= new  SqlConnection(strcon);
           SqlCommand cmd;
           SqlDataReader dr;
