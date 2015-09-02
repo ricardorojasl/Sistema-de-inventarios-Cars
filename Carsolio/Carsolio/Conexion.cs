@@ -17,8 +17,8 @@ namespace Carsolio
 {
      public class Conexion
      {
-        
-         static string strcon = "Server=localhost;Database=carsolio;Uid=root;Pwd=;";
+
+         static string strcon = "Data Source=WIN-MA7PEJA2A19;Initial Catalog=carsolio;Integrated Security=True";
           SqlConnection con= new  SqlConnection(strcon);
           SqlCommand cmd;
           SqlDataReader dr;
