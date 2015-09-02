@@ -119,7 +119,7 @@ namespace Carsolio
 
             SqlConnection con = new SqlConnection();
             SqlCommand cmd;
-            con.ConnectionString = "server=localhost; database=carsolio; Uid=root; pwd=;";
+            con.ConnectionString = "data source=(local);initial catalog=AdventureWorks";
             con.Open();
             DataTable datos = new DataTable();
             cmd = new SqlCommand("select IdProduct as ID, NameProd as Producto, NameModule as Modulo, Quantity as Cantidad, Date as fecha, Description as Descripcion from stock", con);
@@ -185,7 +185,7 @@ namespace Carsolio
 
             SqlConnection con = new SqlConnection();
             SqlCommand cmd;
-            con.ConnectionString = "server=localhost; database=carsolio; Uid=root; pwd=;";
+            con.ConnectionString = "data source=(local);initial catalog=AdventureWorks";
             con.Open();
             DataTable datos = new DataTable();
             cmd = new SqlCommand("select idProd as Codigo, Producto, Cantidad, Fecha  from transacciones where Persona= '"+personal+"'", con);
