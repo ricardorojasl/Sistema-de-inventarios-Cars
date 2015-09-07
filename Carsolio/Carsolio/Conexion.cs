@@ -18,8 +18,8 @@ namespace Carsolio
 {
      public class Conexion
      {
-         
-         static string strcon = "Data Source=.\\SQLEXPRESS;Initial Catalog=carsolio;Integrated Security=True;";
+
+         static string strcon = "data source=localhost; database=carsolio; integrated security=true";
        
           SqlConnection con= new  SqlConnection(strcon);
         
