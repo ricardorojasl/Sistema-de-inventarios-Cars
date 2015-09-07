@@ -19,7 +19,7 @@ namespace Carsolio
      public class Conexion
      {
 
-         static string strcon = "Data Source=.\\DELL-61000-14\\SQLEXPRESS;Initial Catalog=carsolio;Integrated Security=True;Connect Timeout=30";
+         static string strcon = "Server=DELL-61000-14\\SQLEXPRESS;Database=carsolio;Integrated Security=true";
        
           SqlConnection con= new  SqlConnection(strcon);
         
