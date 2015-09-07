@@ -12,14 +12,17 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Data.SqlClient;
+using System.Data.Sql;
 
 namespace Carsolio
 {
      public class Conexion
      {
          
-         static string strcon = "Data Source=localhost\\MSSQL10_0_21.SQLEXPRESS; Initial Catalog=carsolio";
+         static string strcon = "Data Source=localhost;Initial Catalog=carsolio;Integrated Security=True";
+       
           SqlConnection con= new  SqlConnection(strcon);
+        
           SqlCommand cmd;
           SqlDataReader dr;
           SqlDataAdapter da;
