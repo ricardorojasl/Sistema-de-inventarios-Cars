@@ -28,7 +28,7 @@
               <asp:Label ID="Label2" Style="padding-right: 8%;" runat="server" Text="Verificar Nombre: "></asp:Label><br /> 
               <asp:TextBox ID="txtModuleVer" Class="form-control" runat="server" Style="padding-right:50px;" placeholder="Nombre Módulo" required></asp:TextBox><br /> <br /> 
 
-              <asp:Button ID="Button1" CssClass="form-control" runat="server" Text="Aceptar" style="width:100px; margin-left: 300px; " BackColor="#0066FF" BorderColor="Black" ForeColor="White" OnClick="Button1_Click" />
+              <asp:Button ID="Button1" CssClass="form-control" runat="server" Text="Aceptar" style="width:100px; margin-left: 30%; " BackColor="#0066FF" BorderColor="Black" ForeColor="White" OnClick="Button1_Click" />
               </div>
          </asp:Panel>
     </div>

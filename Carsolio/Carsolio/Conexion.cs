@@ -19,8 +19,8 @@ namespace Carsolio
      public class Conexion
      {
 
-         static string strcon = "Server=DELL-61000-14\\SQLEXPRESS;Database=carsolio;Integrated Security=true";
-       
+         static string strcon = "Data Source=.\\SQLExpress;Integrated Security=true;Initial Catalog=carsolio";
+         //static string strcon = "Data Source=.DELL-61000-14\\usuario;Integrated Security=true;User Instance=true;Initial Catalog=carsolio";
           SqlConnection con= new  SqlConnection(strcon);
         
           SqlCommand cmd;
@@ -29,12 +29,15 @@ namespace Carsolio
          
          string str;
          object obj;
-
+         public Conexion() {
+             
+         
+         }
          public bool login(string user, string contra)
          {
               bool resp; 
               con.Open();
-              str = "select count(*) from user where User=@UserName and Password =@Password";
+              str = "select count(*) from tab_usuario where [User]=@UserName and Password =@Password";
               cmd = new  SqlCommand(str, con);
               cmd.CommandType = CommandType.Text;
               cmd.Parameters.AddWithValue("@UserName", user);
@@ -113,7 +116,7 @@ namespace Carsolio
              List<string> modulos = new List<string>();
              int contador = 0;
              con.Open();
-            
+           
                  cmd = new  SqlCommand("select "+tabla+" from "+tabla+"", con);
                   SqlDataReader leer = cmd.ExecuteReader();
                  while (leer.Read())

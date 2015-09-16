@@ -19,7 +19,7 @@ namespace Carsolio
              bool resp = obj.login(usuario.Text,contra.Text);
              if (resp)
              {
-                 Response.Redirect("Trsaccion.aspx");
+                 Response.Redirect("AddModulo.aspx");
              }
              else
              {

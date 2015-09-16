@@ -207,12 +207,16 @@ height:200px;
 
 }
 
-.transaccion, #UpdatePanel1, #Label6,#txtFecha,#Label11,#txtCod,#ListBox1 {
-    margin-top:10%;
+.transaccion, #UpdatePanel1,,#txtFecha,#Label11,#txtCod,#ListBox1 {
+    margin-top:20%;
 
 }
 .transaccion,#Button2 {
-margin-left:40%;
+margin-left:30%;
+
+}
+.transaccion, #Label6 {
+    Position:absolute;
 
 }
 
@@ -240,8 +244,9 @@ border-color: rgba(0, 114, 255, 0.63);
  -moz-border-radius: 5px 10px;
 }
 
+
 #contenedorMod input[type='text']{
-width:60%;
+width:70%;
 display: inline;
 margin-left:22%;
 margin-right:auto;
@@ -255,6 +260,7 @@ margin-right:auto;
     margin-left:25%;
     margin-right:auto;
 }
+
 
 /*///// RISHY//////*/
 #contenedor {
